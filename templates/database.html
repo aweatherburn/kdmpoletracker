@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+    <table>
+        <thead>
+        </thead>
+            <tr>
+                <th>clientid</th>
+                <th>clientname</th>
+                <th>clientemail</th>
+                <th>clientmessage</th>
+            </tr>
+        <tbody>
+            {% for client in clients%}
+                <tr>
+                    <td>{{ client.clientid}}</td>
+                    <td>{{ client.clientname}}</td>
+                    <td>{{ client.clientemail}}</td>
+                    <td>{{ client.clientmessage}}</td>
+                </tr>
+
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

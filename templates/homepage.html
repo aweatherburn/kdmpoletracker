@@ -1,0 +1,66 @@
+{% extends 'layouts.html'%}
+
+{%block content%}
+<main class="mt-5 pt-1">
+  
+  <div class="container-flex">
+    
+      <div class="login-page"> 
+        <div class="form">
+          <form action="/" method="POST" class="register-form">
+            {{form.hidden_tag()}}
+
+            <!-- <input type="text" placeholder="name"/>
+            <input type="text" placeholder="password"/>
+            <input type="text" placeholder="email id"/>
+            <input type="text" placeholder="message"/>
+            <button>Create</button> -->
+            <div> 
+
+              <div class="form-group">
+                {{form.name(class='form-control', placeholder="user name")}}
+              </div>
+
+              <div class="form-group">
+                {{form.email(class='form-control', placeholder="email")}}
+              </div>
+
+              <div class="form-group">
+                {{form.message(class='form-control mb-3', placeholder="message")}}
+              </div>
+
+                {{form.submit(class='btn btn-success', style="background-color:green")}}
+                {% if success%}
+                  <p style="margin-top:10px"> Message was sent successfully</p>
+                {% endif %}
+            </div>
+            <p class="message">Already Registered? <a href="#"> Login</a></p>
+          </form>
+
+          </form class="login-form">
+            <input type="text" placeholder="user name"/>
+            <input type="password" placeholder="password"/>
+            <button>login</button>
+            <p class="message">Not Registered? <a href="#"> Register</a></p>
+          </form>
+        </div>
+      </div> 
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $('.message a').click(function(){
+        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+        });
+      </script> 
+  </div>
+
+</main>
+  <!--Javascript-->
+<script src="{{url_for('static', filename='js/main.js')}}"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap5.min.js"></script>
+    <script src="./js/script.js"></script>
+{%endblock content%}

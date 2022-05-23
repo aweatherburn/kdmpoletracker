@@ -1,0 +1,295 @@
+{% extends 'layouts.html'%}
+
+{%block content%}
+<main class="mt-5 pt-3">
+  <script src="{{url_for('static', filename='js/main.js')}}"></script>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 text-white fw-bold fs-3">
+        Pole: <span id="location">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 mb-3">
+        <div class="card text-uppercase text-muted mb-3 h-100">
+          <div class="card-header fw-bold ">Project Progress</div>
+            <div class="card-body" style="text-align: center;">
+              <img src="{{url_for('static',filename='img/IMG_1787.jpg')}}" style="width: 300px;" alt="...">
+            </div>
+        </div>
+      </div>
+    <div class="col-md-3 mb-3">
+      <div class="card text-uppercase text-muted mb-3 h-100">
+        <div class="card-header fw-bold">Project Information</div>
+        <div class="card-body">
+          <form>
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm">Project</span>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm">WO#</span>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm">Design#</span>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+          </form>
+        </div>
+      </div>
+  </div>
+  
+  <div class="col-md-6 mb-3">
+    <div class="card text-white bg-primary mb-3 h-100">
+      <div class="card-header">Picture</div>
+      <div class="card-body">
+        <h5 class="card-title">Location Picture</h5>
+        <p class="card-text">
+          <div class="container-flex">
+          
+          </div>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--Main Area-->
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header border-0">
+        <div class="row align-items-center">
+          <div class="col">
+            <h3 class="mb-0">SPECS</h3>
+          </div>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <!-- Projects table -->
+        <table class="table align-items-center table-flush table-hover">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">No.</th>
+              <th scope="col">LOCATION</th>
+              <th scope="col">ComEd</th>
+              <th scope="col">IKE#</th>
+              <th scope="col">KMZ#</th>
+              <th scope="col">Coordinates</th>
+              <th scope="col">Fiber Bundle</th>
+              <th scope="col">Completion</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                1
+              </th>
+              <td>
+                <a href="{{url_for('Pole')}}" target="_blank" rel="noopener noreferrer">120</a>
+              </td>
+              <td>402224008</td>
+              <td>
+                <a href="https://office.ikegps.com/#/map/@42.1439938,-87.8364385,19z?t=zwTYcjV3d5&collection=c7455b14-0a88-4b50-b150-7e3c2a7c7b11/" target="_blank" rel="noopener noreferrer">BB026</a>
+              </td>
+              <td>N/A</td>
+              <td>42.276280, -88.286906</td>
+              <td>1-864, 2-288</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="mr-2">60%</span>
+                  <div>
+                    <div class="progress">
+                      <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              
+            </tr>
+            <tr>
+              <th scope="row">
+                2
+              </th>
+              <td>
+                <a href="{{url_for('Pole')}}">121</a>
+              </td>
+              <td>402224009</td>
+              <td>
+                <a href="https://office.ikegps.com/#/map/@42.1439938,-87.8364385,19z?t=zwTYcjV3d5&collection=c7455b14-0a88-4b50-b150-7e3c2a7c7b11/" target="_blank" rel="noopener noreferrer">BB026</a>
+              </td>
+              <td>N/A</td>
+              <td>42.276280, -88.286906</td>
+              <td>1-864, 2-288</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="mr-2">70%</span>
+                  <div>
+                    <div class="progress">
+                      <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                3
+              </th>
+              <td>
+                <a href="{{url_for('Pole')}}">122</a>
+              </td>
+              <td>402224010</td>
+              <td>
+                <a href="https://office.ikegps.com/#/map/@42.1439938,-87.8364385,19z?t=zwTYcjV3d5&collection=c7455b14-0a88-4b50-b150-7e3c2a7c7b11/" target="_blank" rel="noopener noreferrer">BB026</a>
+              </td>
+              <td>N/A</td>
+              <td>42.276280, -88.286906</td>
+              <td>1-864, 2-288</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="mr-2">80%</span>
+                  <div>
+                    <div class="progress">
+                      <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                4
+              </th>
+              <td>
+                <a href="{{url_for('Pole')}}">123</a>
+              </td>
+              <td>402224011</td>
+              <td>
+                <a href="https://office.ikegps.com/#/map/@42.1439938,-87.8364385,19z?t=zwTYcjV3d5&collection=c7455b14-0a88-4b50-b150-7e3c2a7c7b11/" target="_blank" rel="noopener noreferrer">BB026</a>
+              </td>
+              <td>N/A</td>
+              <td>42.276280, -88.286906</td>
+              <td>1-864, 2-288</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="mr-2">75%</span>
+                  <div>
+                    <div class="progress">
+                      <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                5
+              </th>
+              <td>
+                <a href="{{url_for('Pole')}}">124</a>
+              </td>
+              <td>402224012</td>
+              <td>
+                <a href="https://office.ikegps.com/#/map/@42.1439938,-87.8364385,19z?t=zwTYcjV3d5&collection=c7455b14-0a88-4b50-b150-7e3c2a7c7b11/" target="_blank" rel="noopener noreferrer">BB026</a>
+              </td>
+              <td>N/A</td>
+              <td>42.276280, -88.286906</td>
+              <td>1-864, 2-288</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="mr-2">80%</span>
+                  <div>
+                    <div class="progress">
+                      <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                6
+              </th>
+              <td>
+                <a href="{{url_for('Pole')}}">125</a>
+              </td>
+              <td>402224013</td>
+              <td>
+                <a href="https://office.ikegps.com/#/map/@42.1439938,-87.8364385,19z?t=zwTYcjV3d5&collection=c7455b14-0a88-4b50-b150-7e3c2a7c7b11/" target="_blank" rel="noopener noreferrer">BB026</a>
+              </td>
+              <td>N/A</td>
+              <td>42.276280, -88.286906</td>
+              <td>1-864, 2-288</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="mr-2">20%</span>
+                  <div>
+                    <div class="progress">
+                      <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                7
+              </th>
+              <td>
+                <a href="{{url_for('Pole')}}">126</a>
+              </td>
+              <td>402224014</td>
+              <td>
+                <a href="https://office.ikegps.com/#/map/@42.1439938,-87.8364385,19z?t=zwTYcjV3d5&collection=c7455b14-0a88-4b50-b150-7e3c2a7c7b11/" target="_blank" rel="noopener noreferrer">BB026</a>
+              </td>
+              <td>N/A</td>
+              <td>42.276280, -88.286906</td>
+              <td>1-864, 2-288</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="mr-2">30%</span>
+                  <div>
+                    <div class="progress">
+                      <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                8
+              </th>
+              <td>
+                <a href="{{url_for('Pole')}}">127</a>
+              </td>
+              <td>402224015</td>
+              <td>
+                <a href="https://office.ikegps.com/#/map/@42.1439938,-87.8364385,19z?t=zwTYcjV3d5&collection=c7455b14-0a88-4b50-b150-7e3c2a7c7b11/" target="_blank" rel="noopener noreferrer">BB026</a>
+              </td>
+              <td>N/A</td>
+              <td>42.276280, -88.286906</td>
+              <td>1-864, 2-288</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="mr-2">10%</span>
+                  <div>
+                    <div class="progress">
+                      <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+</main>
+
+{%endblock content%}
